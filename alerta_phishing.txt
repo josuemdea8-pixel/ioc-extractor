@@ -1,0 +1,18 @@
+ALERTA #2026-1007 - Possível phishing com download de malware (DADOS FICTÍCIOS)
+Host: WS-FIN-01 (10.20.30.45)   Usuário: maria.silva@empresa.example
+
+Resumo: o usuário clicou em hxxps://login-banco[.]example/entrar e, em seguida, o host
+contatou 203.0.113.77 na porta 443. Houve redirecionamento para
+http://198.51.100.23/update/payload.exe, que baixou o arquivo Comprovante.pdf.exe.
+
+E-mail de origem: alerta@bradesc0-seguranca[.]example | Reply-To: suporte@golpe-mail.example
+Arquivo analisado no sandbox:
+  MD5:    21477511bfc542210a9d1c1847292cf8
+  SHA1:   eedfe86278df6a471560738c9cf3e109082e8735
+  SHA256: 7665b0ee5e94d5517a7301817bab3af5e1111a48378992eb83edc02134e005dd
+
+Vulnerabilidades relacionadas: CVE-2024-3400 e cve-2023-23397 (CVE-2024-3400 citada de novo).
+
+Ruído esperado (infraestrutura interna e site legítimo):
+  DNS interno 192.168.1.10, gateway 10.20.30.1, localhost 127.0.0.1
+  Referência: https://www.microsoft.com/security/blog
